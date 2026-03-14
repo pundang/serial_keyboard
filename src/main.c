@@ -362,7 +362,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
     RegisterClassA(&wc);
 
     HWND hWnd = CreateWindowA(
-        "SerialInputClass", "CH340 TO KEYBOARD",
+        "SerialInputClass", "SERIAL TO KEYBOARD",
         WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX, CW_USEDEFAULT,
         CW_USEDEFAULT, 400, 295, NULL, NULL, hInstance, NULL
     );

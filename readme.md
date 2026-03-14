@@ -1,6 +1,6 @@
-# CH340 Keyboard emulator for Windows
+# Serial Keyboard emulator for Windows
 
-This program is a keyboard emulator for Windows that uses the CH340 USB-to-serial converter. It allows you to send keystrokes to your computer by connecting a CH340 device and sending data to it.
+Originally made for CH340, this program is a keyboard emulator for Windows. It allows you to send keystrokes to your computer by connecting a serial device and sending data to it.
 
 ## Notes
 
