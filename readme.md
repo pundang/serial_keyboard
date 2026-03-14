@@ -7,7 +7,7 @@ Originally made for CH340, this program is a keyboard emulator for Windows. It a
 * Works at 230400 baud
 * The program translates the serial data into keystrokes and sends them to the operating system following the [Microsoft's VK key codes](https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes).
 
-## Example Usage
+## Example Usage (Arduino)
 
 ```c
 void setup() {
