@@ -8,10 +8,6 @@
 
 #pragma comment(lib, "setupapi.lib")
 
-// -------------------------------------------------------------------------
-// Port enumeration
-// -------------------------------------------------------------------------
-
 #define MAX_PORTS 64
 
 typedef struct {
@@ -125,10 +121,6 @@ static void BuildDisplayString(const PortInfo *p, char *out, int outLen) {
     }
 }
 
-// -------------------------------------------------------------------------
-// Serial port open / IO
-// -------------------------------------------------------------------------
-
 static HANDLE OpenSerialPort(const char *portName, DWORD baudRate) {
     char fullName[64];
     snprintf(fullName, sizeof(fullName), "\\\\.\\%s", portName);
@@ -187,10 +179,7 @@ static void SerialLoop(HANDLE hSerial) {
     }
 }
 
-// -------------------------------------------------------------------------
-// GUI
-// -------------------------------------------------------------------------
-
+// Gui
 #define IDC_LIST_PORTS 1001
 #define IDC_BTN_REFRESH 1002
 #define IDC_BTN_CONNECT 1003
